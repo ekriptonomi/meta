@@ -1,3 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "https://ekriptonomi.com/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "Ekriptonomi"
+theme = "esensial"
