@@ -1,0 +1,3 @@
+[submodule "content/berita"]
+	path = content/berita
+	url = https://github.com/ekriptonomi/berita.git
