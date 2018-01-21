@@ -1,3 +1,8 @@
 [submodule "content/berita"]
 	path = content/berita
 	url = https://github.com/ekriptonomi/berita.git
+
+[submodule "ticker-app"]
+	path = static/ticker-app
+	url = https://github.com/ekriptonomi/ticker-app.git
+	branch = gh-pages
