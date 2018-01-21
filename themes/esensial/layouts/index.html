@@ -8,9 +8,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
   <link rel="stylesheet" href="/css/style.css" />
-  {{ range (readDir "./static/ticker-app/static/js") }} 
-    {{if (findRE ".js$" .Name) }}
-      <link rel="stylesheet" href="https://ekriptonomi.github.io/ticker-app/static/css/{{ .Name }}">
+  {{ range (readDir "./static/ticker-app/static/css") }} 
+    {{if (findRE ".css$" .Name) }}
+      <link rel="stylesheet" href="/ticker-app/static/css/{{ .Name }}">
     {{ end }}
   {{ end }}
 </head>
