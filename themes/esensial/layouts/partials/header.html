@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html class="has-navbar-fixed-top">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ .Site.Title }}</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="/css/style.css" /> {{ range (readDir "./static/ticker-app/static/css") }} {{if (findRE ".css$" .Name) }}
+  <link rel="stylesheet" href="/ticker-app/static/css/{{ .Name }}"> {{ end }} {{ end }}
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+</head>
+
+<body>
+  {{ partial "nav-main.html" . }}

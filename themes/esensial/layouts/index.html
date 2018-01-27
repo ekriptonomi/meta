@@ -1,67 +1,80 @@
-<!DOCTYPE html>
-<html>
+{{ partial "header.html" . }}
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ .Site.Title }}</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <link rel="stylesheet" href="/css/style.css" />
-  {{ range (readDir "./static/ticker-app/static/css") }} 
-    {{if (findRE ".css$" .Name) }}
-      <link rel="stylesheet" href="/ticker-app/static/css/{{ .Name }}">
-    {{ end }}
-  {{ end }}
-</head>
-
-<body class="has-navbar-fixed-top">
-  <nav class="navbar has-shadow is-transparent is-fixed-top is-light" role="navigation" aria-label="main navigation">
+<section class="hero is-light has-shadow is-small">
+  <div class="hero-body">
     <div class="container">
-      <div class="navbar-brand">
-        <a class="navbar-item" href="https://bulma.io">
-          <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
-        </a>
-        
-        <button class="button navbar-burger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-      </div>
-      
-      <div class="navbar-menu">
-        <div class="navbar-start">
-          <a href="/" class="navbar-item">Beranda</a>
-          <a href="/berita" class="navbar-item">Berita</a>
-          <a href="/berita" class="navbar-item">Tentang Kami</a>
+      <div class="columns">
+        <div class="column is-three-fifths">
+          <h1 class="title">
+            Ekriptonomi
+          </h1>
+          <h2 class="subtitle">
+            Membahas Seputar Ekonomi Kripto
+          </h2>
+          <ul>
+            <li>
+              <div class="box">
+                <h2 class="has-text-weight-bold is-size-4">Bagaimana cara kerja mata-uang kripto sebenarnya?</h2>
+                <div>Revolusi ekonomi dunia abad 21 dimulai dari kripto. Namun bagaimana cara kerja sebenarnya masih belum banyak orang
+                  yang mengetahuinya.</div>
+                <div class="has-text-right">
+                  <a class="button is-link is-outlined is-medium">Mulai Belajar</a>
+                </div>
+              </div>
+            </li>
+          </ul>
         </div>
-        <div class="navbar-end">
-          <div class="navbar-item">
-            <div class="field is-grouped">
-              <p class="control">
-                <a class="button is-link" href="https://github.com/jgthms/bulma/archive/0.5.1.zip">
-                  <span class="icon">
-                    <i class="fa fa-graduation-cap" aria-hidden="true"></i>
-                  </span>
-                  <span>Belajar</span>
-                </a>
-              </p>
+        <div class="column">
+          <ul>
+            <li>
+              <div class="box">
+                <h2 class="has-text-weight-bold is-size-4">Apa itu sebenarnya Bitcoin, Ethereum, IOTA, dll?</h2>
+                <div>Pelajari uraian lengkap setiap tekhnologi dibalik koin dan token. Temukan jawabannya dengan membaca makalah tekhnis asli di setiap tekhnologinya.</div>
+                <div class="has-text-right">
+                  <a class="button is-link is-outlined is-medium">Jelajah</a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="box">
+                <h2 class="has-text-weight-bold is-size-4">Ingin berdiskusi mengenai ekonomi kripto?</h2>
+                <div>Berdiskusi dengan ribuan orang tentang masa depan uang kripto, protokolnya dan ekonomi dunia.</div>
+                <div class="has-text-right">
+                  <a class="button is-link is-outlined is-medium">Ke forum diskusi</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-three-quarters">
+        <h1 class="is-size-5">Berita Terkini</h1>
+        <div class="card">
+          <div class="card-content">
+            <div class="content">
+              <h1>Rilis Awal Ekriptonomi</h1>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
+              <a>@bulmaio</a>.
+              <a href="#">#css</a>
+              <a href="#">#responsive</a>
+              <br>
+              <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
             </div>
           </div>
         </div>
       </div>
+      <div class="column">reara</div>
     </div>
-  </nav>
-  <section class="section">
-    <div class="container">
-      <h1 class="title">
-        Hello Ekriptonomi
-      </h1>
-      <p class="subtitle">Ekroptonomi dibangun dengan menggunakan <strong>Bulma</strong>!
-      </p>
-    </div>
-  </section>
-  {{ partial "ticker.html" .}}
+  </div>
+</section>
+
+{{ partial "ticker.html" .}}
 </body>
 </html>
