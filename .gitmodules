@@ -18,3 +18,6 @@
 [submodule "public"]
 	path = public
 	url = https://github.com/ekriptonomi/ekriptonomi.github.io.git
+[submodule "content/kurikulum"]
+	path = content/kurikulum
+	url = https://github.com/ekriptonomi/kurikulum.git
