@@ -12,3 +12,6 @@
 [submodule "static/assets"]
 	path = static/assets
 	url = https://github.com/ekriptonomi/assets
+[submodule "data"]
+	path = data
+	url = https://github.com/ekriptonomi/data.git
