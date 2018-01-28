@@ -15,3 +15,6 @@
 [submodule "data"]
 	path = data
 	url = https://github.com/ekriptonomi/data.git
+[submodule "public"]
+	path = public
+	url = https://github.com/ekriptonomi/ekriptonomi.github.io.git
