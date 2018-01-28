@@ -9,3 +9,6 @@
 [submodule "themes/esensial"]
 	path = themes/esensial
 	url = https://github.com/ekriptonomi/esensial.git
+[submodule "static/assets"]
+	path = static/assets
+	url = https://github.com/ekriptonomi/assets
